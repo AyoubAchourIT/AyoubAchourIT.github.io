@@ -115,3 +115,23 @@ h2{margin:0 0 16px; font-size:28px}
   .cards{grid-template-columns:1fr}
   .grid-2{grid-template-columns:1fr}
 }
+.profile-card{
+  text-align:center;
+}
+
+.profile-pic{
+  width:160px;
+  height:160px;
+  object-fit:cover;
+  border-radius:50%;
+  border:2px solid rgba(96,165,250,.6);
+  box-shadow:0 8px 25px rgba(0,0,0,.45);
+  margin-bottom:14px;
+}
+
+.muted{
+  color:var(--muted);
+  font-size:14px;
+}
+
+
