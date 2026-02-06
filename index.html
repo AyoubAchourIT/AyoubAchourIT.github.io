@@ -1,12 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ayoub Achour – Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayoub Achour — AI • Data Science • Optimization • HPC • Finance</title>
+  <meta name="description" content="Ayoub Achour — Engineering student focusing on AI, Data Science, Optimization, HPC and Quant Finance. Projects, experience and contact." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Ayoub Achour</h1>
-  <p>Engineering student – Data Science, AI & Optimization</p>
-  <p>This website is hosted on GitHub Pages 🚀</p>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">Ayoub Achour</a>
+      <nav class="menu">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#experience" data-i18n="nav_experience">Experience</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#education" data-i18n="nav_education">Education</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="langToggle" class="btn ghost" aria-label="Toggle language">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="kicker" data-i18n="hero_kicker">AI • Data Science • Optimization • HPC • Quant Finance</p>
+        <h1 data-i18n="hero_title">Building reliable ML systems and math-driven solutions for real-world decisions.</h1>
+        <p class="sub" data-i18n="hero_sub">
+          Engineering student (ISIMA) with strong applied math background (UCA). Interested in model validation, risk, and scalable ML.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projects" data-i18n="hero_cta_projects">View Projects</a>
+          <a class="btn ghost" href="#contact" data-i18n="hero_cta_contact">Contact</a>
+        </div>
+
+        <div class="links">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" data-i18n="hero_link_linkedin">LinkedIn</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer" data-i18n="hero_link_github">GitHub</a>
+          <a href="#" data-i18n="hero_link_cv">CV (PDF)</a>
+        </div>
+
+        <p class="note" data-i18n="hero_note">
+          Based in France • Open to internships / opportunities in AI, Quant, Model Risk / Validation
+        </p>
+      </div>
+
+      <aside class="card">
+        <h2 data-i18n="quick_title">Quick profile</h2>
+        <ul class="bullets">
+          <li data-i18n="quick_1">Focus: ML pipelines, optimization, time-series, risk/finance applications</li>
+          <li data-i18n="quick_2">Stack: Python, C++, SQL, scikit-learn, XGBoost, FastAPI</li>
+          <li data-i18n="quick_3">Tools: Git, Linux, Docker (basics), HPC/GPU exposure (CUDA/OpenMP)</li>
+          <li data-i18n="quick_4">Interests: Model validation, FICC, stochastic calculus, R/SAS</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 data-i18n="about_title">About</h2>
+      <div class="grid-2">
+        <p data-i18n="about_p1">
+          I am an engineering student specializing in Data Science, Optimization and AI. I enjoy bridging mathematical modeling and practical ML engineering to deliver robust solutions.
+        </p>
+        <p data-i18n="about_p2">
+          My interests span scalable ML, optimization, and quantitative finance (risk, model validation, derivatives). I care about credibility: reproducible experiments, clean code, and clear evaluation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 data-i18n="skills_title">Skills</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="skills_ai_title">AI & Data Science</h3>
+          <p data-i18n="skills_ai_txt">Supervised ML, feature engineering, model evaluation, imbalance handling, interpretability.</p>
+          <p class="tags">Python • scikit-learn • XGBoost • CatBoost • pandas</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="skills_opt_title">Optimization</h3>
+          <p data-i18n="skills_opt_txt">Convex optimization, ADMM/ISTA/FISTA, non-linear programming basics, OR/transport problems.</p>
+          <p class="tags">MATLAB • Optimization • OR</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="skills_hpc_title">HPC & Software</h3>
+          <p data-i18n="skills_hpc_txt">Performance mindset, parallel computing exposure, numerical linear algebra, APIs and deployment.</p>
+          <p class="tags">C++ • CUDA/OpenMP • Linux • Git • FastAPI</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="skills_fin_title">Finance & Quant</h3>
+          <p data-i18n="skills_fin_txt">Time-series forecasting interest, risk/validation mindset, stochastic calculus foundations.</p>
+          <p class="tags">R • SAS • Stochastic Calc • Model Validation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 data-i18n="exp_title">Experience</h2>
+
+      <div class="timeline">
+        <div class="item">
+          <div class="item-head">
+            <h3 data-i18n="exp1_title">AI Engineer Intern — Fraud Detection (Cards)</h3>
+            <span class="meta" data-i18n="exp1_meta">Apr–Aug 2025 • Afsol (France)</span>
+          </div>
+          <ul class="bullets">
+            <li data-i18n="exp1_b1">Built end-to-end ML pipeline on 248k+ real transactions (data cleaning → features → training → evaluation).</li>
+            <li data-i18n="exp1_b2">Benchmarked models (RF, XGBoost/CatBoost) and deployed an API with FastAPI.</li>
+            <li data-i18n="exp1_b3">Focused on interpretability, monitoring-ready structure, and reproducibility.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <h3 data-i18n="exp2_title">GPU Numerical Linear Algebra Project</h3>
+            <span class="meta" data-i18n="exp2_meta">Feb–Mar 2025 • Academic project</span>
+          </div>
+          <ul class="bullets">
+            <li data-i18n="exp2_b1">Implemented eigenvalue computations for many small matrices with CUDA (Householder + QL approach).</li>
+            <li data-i18n="exp2_b2">Explored performance trade-offs and GPU/CPU considerations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2 data-i18n="proj_title">Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="p1_title">Financial Time-Series Forecasting (Hackathon / Industry)</h3>
+          <p data-i18n="p1_txt">Feature-based forecasting with technical indicators; exploring ARIMA vs deep learning baselines; multi-step horizon evaluation.</p>
+          <p class="tags">Time series • ARIMA • LSTM/GRU • Evaluation</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="p2_title">AI Tutor Agent (RAG + Energy Awareness)</h3>
+          <p data-i18n="p2_txt">Document-grounded Q&A system with evaluation and energy estimation (CodeCarbon), focusing on performance vs sobriety.</p>
+          <p class="tags">RAG • LLMOps • CodeCarbon</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="p3_title">Optimization Labs (Convex & Non-Linear)</h3>
+          <p data-i18n="p3_txt">Hands-on implementations: LASSO via ADMM, ISTA/FISTA, SQP basics and constrained optimization exercises.</p>
+          <p class="tags">Convex • ADMM • SQP</p>
+        </div>
+      </div>
+
+      <p class="note" data-i18n="proj_note">
+        Tip: add links to repos/notebooks once you publish them (GitHub, papers, slides).
+      </p>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+      <h2 data-i18n="edu_title">Education</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="edu1_title">Engineering Degree — ISIMA (Clermont Auvergne INP)</h3>
+          <p class="meta" data-i18n="edu1_meta">Specialization: Data Science, Optimization & AI</p>
+          <p data-i18n="edu1_txt">Key topics: machine learning, optimization, numerical simulation, parallel computing exposure (CUDA/OpenMP).</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="edu2_title">Applied Mathematics & Statistics — Université Clermont Auvergne (UCA)</h3>
+          <p class="meta" data-i18n="edu2_meta">Applied math foundations</p>
+          <p data-i18n="edu2_txt">Probability, statistics, stochastic processes, mathematical modeling; tools: R, SAS.</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="edu3_title">CPGE (MPSI/MP) — Intensive Preparatory Classes</h3>
+          <p data-i18n="edu3_txt">Strong background in mathematics and physics; rigorous problem-solving culture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2 data-i18n="contact_title">Contact</h2>
+      <p data-i18n="contact_txt">
+        Feel free to reach out for internships, research collaborations or quant/ML discussions.
+      </p>
+
+      <div class="contact">
+        <a class="btn" href="mailto:YOUR_EMAIL_HERE" data-i18n="contact_email">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" data-i18n="contact_linkedin">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/" target="_blank" rel="noreferrer" data-i18n="contact_github">GitHub</a>
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Ayoub Achour</span>
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
