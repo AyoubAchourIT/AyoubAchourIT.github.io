@@ -3,383 +3,169 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ayoub Achour — AI • Data Science • Optimization • HPC • Quant Finance</title>
-  <meta name="description" content="Ayoub Achour — AI, Data Science, Optimization, HPC and Quant Finance. Projects, experience, coursework and contact." />
-  <link rel="stylesheet" href="style.css?v=20" />
+  <title>Ayoub Achour — AI • Quant • Optimization</title>
+  <meta name="description" content="Engineering student in AI, Optimization & Quantitative Finance. ML systems, stochastic modeling, model validation and performance-aware computing." />
+  <link rel="stylesheet" href="style.css?v=40" />
 </head>
 
 <body>
-  <!-- NAV -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#home">Ayoub Achour</a>
 
-      <nav class="menu" aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
-      </nav>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#">Ayoub Achour</a>
+    <nav class="menu">
+      <a href="#proof">Proof</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-      <div class="nav-actions">
-        <button id="langToggle" class="btn ghost" aria-label="Toggle language">EN</button>
-      </div>
-    </div>
-  </header>
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
 
-  <!-- HERO -->
-  <main id="home" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-left">
-        <p class="kicker" data-i18n="hero_kicker">
-          <span class="kicker-dot"></span>
-          AI • Data Science • Optimization • HPC • Quant Finance
-        </p>
+    <div>
+      <h1>
+        AI, Optimization & Quantitative Systems
+      </h1>
 
-        <h1 data-i18n="hero_title">
-          Building reliable ML systems and math-driven solutions for real-world decisions.
-        </h1>
-
-        <p class="sub" data-i18n="hero_sub">
-          Engineering student (ISIMA) with strong applied math background (UCA). Interested in model validation, risk, and scalable ML.
-        </p>
-
-        <div class="cta">
-          <a class="btn" href="#panel" data-i18n="hero_cta_projects">Explore</a>
-          <a class="btn ghost" href="#contact" data-i18n="hero_cta_contact">Contact</a>
-        </div>
-
-        <div class="links" aria-label="External links">
-          <a href="https://www.linkedin.com/in/ayoub-achour01" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/ayoubachourit" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="cv.pdf" target="_blank" rel="noreferrer" data-i18n="hero_link_cv">CV (PDF)</a>
-        </div>
-
-        <p class="note" data-i18n="hero_note">
-          Based in France • Open to internships / opportunities in AI, Quant, Model Risk / Validation
-        </p>
-      </div>
-
-      <aside class="profile" aria-label="Profile">
-        <div class="profile-photo">
-          <img src="./profile.jpg" alt="Ayoub Achour portrait" class="profile-pic" />
-        </div>
-
-        <div class="profile-card">
-          <h2>Ayoub Achour</h2>
-          <p class="muted">Engineering student — AI, Data Science, Optimization, HPC & Quant Finance</p>
-
-          <div class="profile-badges" aria-label="Focus areas">
-            <span class="badge">AI / ML</span>
-            <span class="badge violet">Optimization</span>
-            <span class="badge green">HPC / GPU</span>
-            <span class="badge violet">Model Validation</span>
-            <span class="badge">Quant Finance</span>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </main>
-
-  <!-- PANEL (innovative organized core) -->
-  <section id="panel" class="section alt">
-    <div class="container">
-
-      <!-- Quick tiles (innovative, recruiter-friendly) -->
-      <div class="tiles">
-        <div class="tile card">
-          <div class="tile-top">
-            <span class="icon-chip">🎯</span>
-            <div>
-              <div class="tile-title">Now</div>
-              <div class="muted">Engineering @ ISIMA • Applied Math @ UCA</div>
-            </div>
-          </div>
-          <div class="tile-body muted">
-            Building reproducible ML projects, exploring risk/model validation mindset, and performance-aware tooling.
-          </div>
-        </div>
-
-        <div class="tile card">
-          <div class="tile-top">
-            <span class="icon-chip">🔎</span>
-            <div>
-              <div class="tile-title">Next</div>
-              <div class="muted">Internship / opportunity</div>
-            </div>
-          </div>
-          <div class="tile-body muted">
-            AI/ML • Quant • Model Risk/Validation • Data Science — France/Europe/International.
-          </div>
-        </div>
-
-        <div class="tile card">
-          <div class="tile-top">
-            <span class="icon-chip">⚡</span>
-            <div>
-              <div class="tile-title">Edge</div>
-              <div class="muted">Math + Engineering</div>
-            </div>
-          </div>
-          <div class="tile-body muted">
-            Optimization + applied math background + hands-on ML engineering + exposure to HPC/GPU.
-          </div>
-        </div>
-      </div>
-
-      <!-- Tabs -->
-      <div class="tabs card">
-        <div class="tabs-bar" role="tablist" aria-label="Sections">
-          <button class="tab is-active" role="tab" data-target="tab-about" aria-selected="true">About</button>
-          <button class="tab" role="tab" data-target="tab-skills" aria-selected="false">Skills</button>
-          <button class="tab" role="tab" data-target="tab-exp" aria-selected="false">Experience</button>
-          <button class="tab" role="tab" data-target="tab-proj" aria-selected="false">Projects</button>
-          <button class="tab" role="tab" data-target="tab-edu" aria-selected="false">Education</button>
-        </div>
-
-        <!-- TAB: ABOUT -->
-        <div id="tab-about" class="tab-panel is-active" role="tabpanel">
-          <div class="panel-grid">
-            <div>
-              <h2 data-i18n="about_title">About</h2>
-              <p class="muted" data-i18n="about_p1">
-                I am an engineering student specializing in Data Science, Optimization and AI. I enjoy bridging mathematical modeling and practical ML engineering to deliver robust solutions.
-              </p>
-              <p class="muted" data-i18n="about_p2">
-                My interests span scalable ML, optimization, and quantitative finance (risk, model validation, derivatives). I care about credibility: reproducible experiments, clean code, and clear evaluation.
-              </p>
-            </div>
-
-            <div class="card compact">
-              <div class="mini-title">Focus Areas</div>
-              <div class="focus">
-                <div class="focus-item">
-                  <div class="focus-head"><span class="logo">🤖</span> AI/ML Systems</div>
-                  <div class="muted">Pipelines • evaluation • deployment mindset</div>
-                </div>
-                <div class="focus-item">
-                  <div class="focus-head"><span class="logo">🧠</span> Optimization</div>
-                  <div class="muted">Convex • non-linear • OR • practical solvers</div>
-                </div>
-                <div class="focus-item">
-                  <div class="focus-head"><span class="logo">📈</span> Quant / Validation</div>
-                  <div class="muted">Risk • backtesting mentality • robustness</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TAB: SKILLS (icons) -->
-        <div id="tab-skills" class="tab-panel" role="tabpanel">
-          <h2 data-i18n="skills_title">Skills</h2>
-
-          <div class="skills-grid">
-            <div class="skill card compact">
-              <div class="skill-head">
-                <span class="skill-ico">🐍</span>
-                <div>
-                  <div class="skill-title">Python</div>
-                  <div class="muted">pandas • scikit-learn • XGBoost • FastAPI</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill card compact">
-              <div class="skill-head">
-                <span class="skill-ico">💠</span>
-                <div>
-                  <div class="skill-title">Optimization</div>
-                  <div class="muted">ADMM • ISTA/FISTA • OR • NLP basics</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill card compact">
-              <div class="skill-head">
-                <span class="skill-ico">🧩</span>
-                <div>
-                  <div class="skill-title">C++ / Systems</div>
-                  <div class="muted">performance mindset • clean abstractions</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill card compact">
-              <div class="skill-head">
-                <span class="skill-ico">⚙️</span>
-                <div>
-                  <div class="skill-title">HPC / GPU</div>
-                  <div class="muted">CUDA/OpenMP exposure • numerical LA</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill card compact">
-              <div class="skill-head">
-                <span class="skill-ico">📊</span>
-                <div>
-                  <div class="skill-title">R / SAS</div>
-                  <div class="muted">stats tooling • applied data analysis</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skill card compact">
-              <div class="skill-head">
-                <span class="skill-ico">🧮</span>
-                <div>
-                  <div class="skill-title">Stochastic Calculus</div>
-                  <div class="muted">probability • processes • finance foundations</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TAB: EXPERIENCE (with logos placeholders) -->
-        <div id="tab-exp" class="tab-panel" role="tabpanel">
-          <h2 data-i18n="exp_title">Experience</h2>
-
-          <div class="stack">
-            <article class="card">
-              <div class="row">
-                <div class="logo-box" aria-hidden="true">A</div>
-                <div class="grow">
-                  <div class="row-head">
-                    <h3 data-i18n="exp1_title">AI Engineer Intern — Fraud Detection (Cards)</h3>
-                    <span class="meta" data-i18n="exp1_meta">Apr–Aug 2025 • Afsol (France)</span>
-                  </div>
-                  <ul class="bullets">
-                    <li data-i18n="exp1_b1">Built end-to-end ML pipeline on 248k+ real transactions (data cleaning → features → training → evaluation).</li>
-                    <li data-i18n="exp1_b2">Benchmarked models (RF, XGBoost/CatBoost) and deployed an API with FastAPI.</li>
-                    <li data-i18n="exp1_b3">Focused on interpretability, monitoring-ready structure, and reproducibility.</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="row">
-                <div class="logo-box" aria-hidden="true">GPU</div>
-                <div class="grow">
-                  <div class="row-head">
-                    <h3 data-i18n="exp2_title">GPU Numerical Linear Algebra Project</h3>
-                    <span class="meta" data-i18n="exp2_meta">Feb–Mar 2025 • Academic project</span>
-                  </div>
-                  <ul class="bullets">
-                    <li data-i18n="exp2_b1">Implemented eigenvalue computations for many small matrices with CUDA (Householder + QL approach).</li>
-                    <li data-i18n="exp2_b2">Explored performance trade-offs and GPU/CPU considerations.</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <p class="muted" style="margin-top:12px;">
-            Tip: replace the letter logos (A/GPU) with real logos or icons later (PNG/SVG).
-          </p>
-        </div>
-
-        <!-- TAB: PROJECTS -->
-        <div id="tab-proj" class="tab-panel" role="tabpanel">
-          <h2 data-i18n="proj_title">Projects</h2>
-
-          <div class="cards">
-            <div class="card">
-              <div class="row-head">
-                <h3 data-i18n="p1_title">Financial Time-Series Forecasting (Hackathon / Industry)</h3>
-                <span class="meta">Time series</span>
-              </div>
-              <p class="muted" data-i18n="p1_txt">
-                Feature-based forecasting with technical indicators; exploring ARIMA vs deep learning baselines; multi-step horizon evaluation.
-              </p>
-              <p class="tags">ARIMA/SARIMA • LSTM/GRU • evaluation</p>
-            </div>
-
-            <div class="card">
-              <div class="row-head">
-                <h3 data-i18n="p2_title">AI Tutor Agent (RAG + Energy Awareness)</h3>
-                <span class="meta">RAG</span>
-              </div>
-              <p class="muted" data-i18n="p2_txt">
-                Document-grounded Q&A system with evaluation and energy estimation (CodeCarbon), focusing on performance vs sobriety.
-              </p>
-              <p class="tags">LLMOps • CodeCarbon • evaluation</p>
-            </div>
-
-            <div class="card">
-              <div class="row-head">
-                <h3 data-i18n="p3_title">Optimization Labs (Convex & Non-Linear)</h3>
-                <span class="meta">Optimization</span>
-              </div>
-              <p class="muted" data-i18n="p3_txt">
-                Hands-on implementations: LASSO via ADMM, ISTA/FISTA, SQP basics and constrained optimization exercises.
-              </p>
-              <p class="tags">ADMM • ISTA/FISTA • SQP</p>
-            </div>
-          </div>
-
-          <p class="note" data-i18n="proj_note">
-            Tip: add links to repos/notebooks once you publish them (GitHub, papers, slides).
-          </p>
-        </div>
-
-        <!-- TAB: EDUCATION -->
-        <div id="tab-edu" class="tab-panel" role="tabpanel">
-          <h2 data-i18n="edu_title">Education</h2>
-
-          <div class="stack">
-            <div class="card">
-              <div class="row-head">
-                <h3 data-i18n="edu1_title">Engineering Degree — ISIMA (Clermont Auvergne INP)</h3>
-                <span class="meta" data-i18n="edu1_meta">Specialization: Data Science, Optimization & AI</span>
-              </div>
-              <p class="muted" data-i18n="edu1_txt">Key topics: machine learning, optimization, numerical simulation, parallel computing exposure (CUDA/OpenMP).</p>
-              <p class="tags">ML • Optimization • Simulation • HPC</p>
-            </div>
-
-            <div class="card">
-              <div class="row-head">
-                <h3 data-i18n="edu2_title">Applied Mathematics & Statistics — Université Clermont Auvergne (UCA)</h3>
-                <span class="meta" data-i18n="edu2_meta">Applied math foundations</span>
-              </div>
-              <p class="muted" data-i18n="edu2_txt">Probability, statistics, stochastic processes, mathematical modeling; tools: R, SAS.</p>
-              <p class="tags">Probability • Stochastic • R • SAS</p>
-            </div>
-
-            <div class="card">
-              <div class="row-head">
-                <h3 data-i18n="edu3_title">CPGE (MPSI/MP) — Intensive Preparatory Classes</h3>
-              </div>
-              <p class="muted" data-i18n="edu3_txt">Strong background in mathematics and physics; rigorous problem-solving culture.</p>
-              <p class="tags">Math • Physics • Rigor</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 data-i18n="contact_title">Contact</h2>
-      <p class="muted" data-i18n="contact_txt">
-        Feel free to reach out for internships, research collaborations or quant/ML discussions.
+      <p class="sub">
+        Engineering student (ISIMA) with applied mathematics background (UCA).  
+        Focused on robust ML pipelines, stochastic modeling, and model validation.
       </p>
 
-      <div class="contact">
-        <a class="btn" href="mailto:ayoub.achour@etu.uca.fr" data-i18n="contact_email">Email me</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/ayoub-achour01" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="btn ghost" href="https://github.com/ayoubachourit" target="_blank" rel="noreferrer">GitHub</a>
+      <div class="hero-chips">
+        <span>Machine Learning Systems</span>
+        <span>Optimization & Applied Math</span>
+        <span>Quant / Risk / Validation</span>
       </div>
 
-      <footer class="footer">
-        <span>© <span id="year"></span> Ayoub Achour</span>
-      </footer>
+      <div class="hero-links">
+        <a href="cv.pdf" target="_blank">CV</a>
+        <a href="https://github.com/ayoubachourit" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ayoub-achour01" target="_blank">LinkedIn</a>
+      </div>
     </div>
-  </section>
 
-  <script src="script.js?v=20"></script>
+    <div class="photo-wrapper">
+      <img src="profile.jpg" alt="Ayoub Achour" class="profile-pic">
+    </div>
+
+  </div>
+</section>
+
+<!-- PROOF SECTION -->
+<section id="proof" class="section">
+  <div class="container">
+    <h2>Selected Technical Highlights</h2>
+
+    <div class="proof-grid">
+
+      <div class="proof-item">
+        <h3>🥇 Hackathon Podium</h3>
+        <p>Ranked on the podium for a data-driven solution involving predictive modeling and structured evaluation.</p>
+      </div>
+
+      <div class="proof-item">
+        <h3>Physics-Informed Neural Networks (PINNs)</h3>
+        <p>Implemented neural models embedding physical constraints into loss functions for differential equation problems.</p>
+      </div>
+
+      <div class="proof-item">
+        <h3>Black–Scholes Implementation</h3>
+        <p>Analytical and numerical pricing of European options with sensitivity analysis and stochastic foundations.</p>
+      </div>
+
+      <div class="proof-item">
+        <h3>Fraud Detection Pipeline (248k+ transactions)</h3>
+        <p>End-to-end ML pipeline with feature engineering, imbalance handling, model benchmarking and API deployment.</p>
+      </div>
+
+      <div class="proof-item">
+        <h3>GPU Eigenvalue Computation (CUDA)</h3>
+        <p>Householder + QL approach for large batches of small matrices with performance analysis.</p>
+      </div>
+
+      <div class="proof-item">
+        <h3>AI Tutor (RAG + Energy Profiling)</h3>
+        <p>Document-grounded QA with evaluation metrics and CodeCarbon-based energy analysis.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section id="stack" class="section dark">
+  <div class="container">
+    <h2>Core Stack</h2>
+
+    <div class="stack-grid">
+      <div>
+        <h3>Machine Learning</h3>
+        <p>Python, scikit-learn, XGBoost, CatBoost, feature engineering, evaluation protocols.</p>
+      </div>
+
+      <div>
+        <h3>Optimization & Applied Math</h3>
+        <p>Convex optimization, ADMM, ISTA/FISTA, nonlinear programming, stochastic processes.</p>
+      </div>
+
+      <div>
+        <h3>Quant & Finance</h3>
+        <p>Black–Scholes, time-series forecasting, model validation mindset, R & SAS tooling.</p>
+      </div>
+
+      <div>
+        <h3>Systems & Performance</h3>
+        <p>C++, CUDA/OpenMP exposure, numerical linear algebra, Linux, Git.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <h2>Experience</h2>
+
+    <div class="timeline">
+      <div>
+        <h3>AI Engineer Intern — Fraud Detection</h3>
+        <p>Built reproducible ML pipeline on real financial transactions. Focus on robustness and interpretability.</p>
+      </div>
+
+      <div>
+        <h3>GPU Numerical Linear Algebra Project</h3>
+        <p>Parallel implementation and performance comparison CPU vs GPU.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section dark">
+  <div class="container">
+    <h2>Education</h2>
+
+    <p><strong>ISIMA — Engineering Degree</strong> (AI, Optimization, Data Science)</p>
+    <p><strong>UCA — Applied Mathematics & Statistics</strong></p>
+    <p><strong>CPGE MPSI/MP</strong> — rigorous mathematics & physics training</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Open to internships and technical discussions in AI, Quant and Model Validation.</p>
+    <a href="mailto:ayoub.achour@etu.uca.fr" class="btn">Email</a>
+  </div>
+</section>
+
 </body>
 </html>
