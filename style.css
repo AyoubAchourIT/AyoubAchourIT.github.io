@@ -280,3 +280,39 @@ h2{
   .grid-2{grid-template-columns:1fr}
   .profile-pic{max-width: 520px;}
 }
+.tiles{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-bottom:16px}
+.tile-top{display:flex; gap:12px; align-items:center}
+.icon-chip{display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:12px; background:rgba(125,211,252,.10); border:1px solid rgba(125,211,252,.18)}
+.tile-title{font-weight:800}
+
+.tabs{padding:14px}
+.tabs-bar{display:flex; gap:10px; flex-wrap:wrap; padding:6px; border:1px solid var(--line); border-radius:16px; background:rgba(255,255,255,.03)}
+.tab{cursor:pointer; padding:10px 12px; border-radius:14px; border:1px solid transparent; background:transparent; color:var(--muted); font-weight:800}
+.tab.is-active{color:var(--text); background:rgba(125,211,252,.10); border-color:rgba(125,211,252,.22)}
+
+.tab-panel{display:none; padding:14px 6px 2px}
+.tab-panel.is-active{display:block}
+
+.panel-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:16px}
+.compact{padding:14px}
+.focus{display:grid; gap:12px; margin-top:8px}
+.focus-head{font-weight:800; display:flex; gap:10px; align-items:center}
+.logo{width:30px; height:30px; display:inline-flex; align-items:center; justify-content:center; border-radius:12px; background:rgba(167,139,250,.10); border:1px solid rgba(167,139,250,.18)}
+
+.skills-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px}
+.skill-head{display:flex; gap:12px; align-items:center}
+.skill-ico{width:36px; height:36px; border-radius:12px; display:inline-flex; align-items:center; justify-content:center; background:rgba(52,211,153,.10); border:1px solid rgba(52,211,153,.18)}
+.skill-title{font-weight:850}
+
+.stack{display:grid; gap:14px}
+.row{display:flex; gap:14px; align-items:flex-start}
+.grow{flex:1}
+.row-head{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
+.logo-box{min-width:52px; height:52px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-weight:900; background:rgba(255,255,255,.05); border:1px solid var(--line)}
+
+.mini-title{font-weight:900; margin-bottom:8px}
+@media (max-width: 900px){
+  .tiles{grid-template-columns:1fr}
+  .panel-grid{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr}
+}
