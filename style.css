@@ -255,3 +255,117 @@ p{
     margin-top:40px;
   }
 }
+
+/* =========================
+   GRAAL PACK — premium motion + mesh + noise
+========================= */
+
+/* Mesh + noise overlay (premium dark like Linear/Vercel vibe) */
+body::before{
+  content:"";
+  position:fixed; inset:0;
+  background:
+    radial-gradient(900px 520px at 20% 8%, rgba(76,126,255,.18), transparent 60%),
+    radial-gradient(760px 460px at 92% 12%, rgba(120,170,255,.12), transparent 60%),
+    radial-gradient(820px 520px at 55% 120%, rgba(76,126,255,.10), transparent 60%);
+  pointer-events:none;
+  z-index:-2;
+}
+
+body::after{
+  content:"";
+  position:fixed; inset:0;
+  pointer-events:none;
+  z-index:-1;
+  opacity:.14;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");
+  background-repeat:repeat;
+  mix-blend-mode:overlay;
+}
+
+/* Glassy panels (subtle) */
+.section.dark{
+  background: linear-gradient(180deg, rgba(21,24,33,.92), rgba(21,24,33,.78));
+}
+
+/* Reveal on scroll */
+.reveal{
+  opacity:0;
+  transform: translateY(10px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+.reveal.is-visible{
+  opacity:1;
+  transform: translateY(0);
+}
+
+/* Card “shine” on hover (stylé mais clean) */
+.proof-item, .stack-grid div, .timeline div{
+  position:relative;
+  overflow:hidden;
+}
+.proof-item::before,
+.stack-grid div::before,
+.timeline div::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background: radial-gradient(380px 180px at var(--mx, 30%) var(--my, 20%),
+    rgba(76,126,255,.18), transparent 60%);
+  opacity:0;
+  transition: opacity .22s ease;
+  pointer-events:none;
+}
+.proof-item:hover::before,
+.stack-grid div:hover::before,
+.timeline div:hover::before{
+  opacity:1;
+}
+
+/* More premium hover */
+.proof-item:hover,
+.stack-grid div:hover,
+.timeline div:hover{
+  transform: translateY(-2px);
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+  border-color: rgba(76,126,255,.55);
+}
+
+/* Active nav highlight */
+.menu a.is-active{
+  color: var(--text);
+  position:relative;
+}
+.menu a.is-active::after{
+  content:"";
+  position:absolute;
+  left:0; right:0;
+  bottom:-10px;
+  height:2px;
+  background: var(--accent);
+  opacity:.9;
+  border-radius:999px;
+}
+
+/* Premium button hover */
+.btn{
+  box-shadow: 0 12px 30px rgba(76,126,255,.18);
+}
+.btn:hover{
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  transition: transform .12s ease, filter .12s ease;
+}
+
+/* Tilt image (subtle) */
+.tilt{
+  transform-style:preserve-3d;
+  will-change: transform;
+  transition: transform .18s ease;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1; transform:none; transition:none;}
+  .tilt{transition:none;}
+}
