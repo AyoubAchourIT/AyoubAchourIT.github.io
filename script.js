@@ -201,3 +201,64 @@ if (tabs.length && panels.length) setActiveTab("tab-about");
 
 // default language
 applyLang("en");
+
+// ===== GRAAL PACK: reveal on scroll + nav active + card shine + subtle tilt =====
+
+// 1) Reveal on scroll
+const revealEls = document.querySelectorAll(".reveal");
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add("is-visible");
+  });
+}, { threshold: 0.12 });
+revealEls.forEach(el => io.observe(el));
+
+// 2) Nav active section highlight
+const navLinks = document.querySelectorAll('.menu a[href^="#"]');
+const sections = [...navLinks]
+  .map(a => document.querySelector(a.getAttribute("href")))
+  .filter(Boolean);
+
+const ioNav = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const id = "#" + entry.target.id;
+    navLinks.forEach(a => a.classList.toggle("is-active", a.getAttribute("href") === id));
+  });
+}, { rootMargin: "-45% 0px -50% 0px", threshold: 0.01 });
+
+sections.forEach(s => ioNav.observe(s));
+
+// 3) Card shine: track mouse position for gradient highlight
+function bindShine(selector){
+  document.querySelectorAll(selector).forEach(card => {
+    card.addEventListener("mousemove", (e) => {
+      const r = card.getBoundingClientRect();
+      const mx = ((e.clientX - r.left) / r.width) * 100;
+      const my = ((e.clientY - r.top) / r.height) * 100;
+      card.style.setProperty("--mx", mx + "%");
+      card.style.setProperty("--my", my + "%");
+    });
+  });
+}
+bindShine(".proof-item");
+bindShine(".stack-grid div");
+bindShine(".timeline div");
+
+// 4) Subtle tilt for photo (premium, not gimmicky)
+const tiltEl = document.querySelector(".tilt");
+if (tiltEl && window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+  const max = 6; // degrees (keep subtle)
+  tiltEl.addEventListener("mousemove", (e) => {
+    const r = tiltEl.getBoundingClientRect();
+    const px = (e.clientX - r.left) / r.width;
+    const py = (e.clientY - r.top) / r.height;
+    const rx = (py - 0.5) * -2 * max;
+    const ry = (px - 0.5) *  2 * max;
+    tiltEl.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+  });
+  tiltEl.addEventListener("mouseleave", () => {
+    tiltEl.style.transform = "perspective(700px) rotateX(0deg) rotateY(0deg)";
+  });
+}
+
