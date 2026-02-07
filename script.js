@@ -174,6 +174,30 @@ if (toggle) {
     applyLang(lang === "en" ? "fr" : "en");
   });
 }
+// --- Tabs logic (clean, app-like) ---
+const tabs = document.querySelectorAll(".tab");
+const panels = document.querySelectorAll(".tab-panel");
+
+function setActiveTab(targetId) {
+  tabs.forEach(t => {
+    const isActive = t.getAttribute("data-target") === targetId;
+    t.classList.toggle("is-active", isActive);
+    t.setAttribute("aria-selected", isActive ? "true" : "false");
+  });
+
+  panels.forEach(p => {
+    p.classList.toggle("is-active", p.id === targetId);
+  });
+}
+
+tabs.forEach(t => {
+  t.addEventListener("click", () => {
+    setActiveTab(t.getAttribute("data-target"));
+  });
+});
+
+// default
+if (tabs.length && panels.length) setActiveTab("tab-about");
 
 // default language
 applyLang("en");
