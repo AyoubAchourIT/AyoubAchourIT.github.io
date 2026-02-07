@@ -61,72 +61,110 @@
 <!-- PROOF SECTION -->
 <section id="proof" class="section">
   <div class="container">
-    <h2>Selected Technical Highlights</h2>
+    <h2>Technical Highlights</h2>
 
     <div class="proof-grid">
 
       <div class="proof-item">
-        <h3>🥇 Hackathon Podium</h3>
-        <p>Ranked on the podium for a data-driven solution involving predictive modeling and structured evaluation.</p>
-      </div>
-
-      <div class="proof-item">
-        <h3>Physics-Informed Neural Networks (PINNs)</h3>
-        <p>Implemented neural models embedding physical constraints into loss functions for differential equation problems.</p>
-      </div>
-
-      <div class="proof-item">
-        <h3>Black–Scholes Implementation</h3>
-        <p>Analytical and numerical pricing of European options with sensitivity analysis and stochastic foundations.</p>
-      </div>
-
-      <div class="proof-item">
-        <h3>Fraud Detection Pipeline (248k+ transactions)</h3>
-        <p>End-to-end ML pipeline with feature engineering, imbalance handling, model benchmarking and API deployment.</p>
+        <h3>Fraud Detection ML Pipeline (248k+ Transactions)</h3>
+        <p>
+          Designed and implemented an end-to-end supervised ML pipeline on real credit card transaction data.
+          Performed feature engineering, imbalance handling and benchmarking (Random Forest, XGBoost, CatBoost).
+          Structured training/evaluation workflow for reproducibility and deployed inference API using FastAPI.
+        </p>
       </div>
 
       <div class="proof-item">
         <h3>GPU Eigenvalue Computation (CUDA)</h3>
-        <p>Householder + QL approach for large batches of small matrices with performance analysis.</p>
+        <p>
+          Implemented eigenvalue computation for large batches of small matrices using Householder reduction
+          followed by QL algorithm. Analyzed GPU vs CPU performance tradeoffs and memory access patterns
+          for numerical linear algebra workloads.
+        </p>
+      </div>
+
+      <div class="proof-item">
+        <h3>Physics-Informed Neural Networks (PINNs)</h3>
+        <p>
+          Implemented neural networks embedding PDE constraints directly into the loss function.
+          Combined automatic differentiation and optimization-based training to solve differential equations
+          while enforcing physical consistency.
+        </p>
+      </div>
+
+      <div class="proof-item">
+        <h3>Black–Scholes & Option Pricing</h3>
+        <p>
+          Implemented analytical Black–Scholes pricing for European options, computed Greeks and explored
+          stochastic process foundations. Compared closed-form solution with numerical and Monte Carlo approaches.
+        </p>
+      </div>
+
+      <div class="proof-item">
+        <h3>Financial Time-Series Forecasting</h3>
+        <p>
+          Multi-step (15-step horizon) forecasting using technical indicators (MACD, Stochastic Oscillator).
+          Benchmarked ARIMA/SARIMA models against LSTM/GRU architectures.
+          Evaluation based on trend accuracy and correlation metrics.
+        </p>
       </div>
 
       <div class="proof-item">
         <h3>AI Tutor (RAG + Energy Profiling)</h3>
-        <p>Document-grounded QA with evaluation metrics and CodeCarbon-based energy analysis.</p>
+        <p>
+          Developed document-grounded Q&A system with structured evaluation.
+          Integrated CodeCarbon to measure energy footprint and analyzed performance vs energy trade-offs.
+        </p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- STACK -->
+
 <section id="stack" class="section dark">
   <div class="container">
-    <h2>Core Stack</h2>
+    <h2>Core Technical Stack</h2>
 
     <div class="stack-grid">
+
       <div>
         <h3>Machine Learning</h3>
-        <p>Python, scikit-learn, XGBoost, CatBoost, feature engineering, evaluation protocols.</p>
+        <p>
+          Python, scikit-learn, XGBoost, CatBoost, feature engineering,
+          imbalance handling, model benchmarking, API deployment (FastAPI).
+        </p>
       </div>
 
       <div>
-        <h3>Optimization & Applied Math</h3>
-        <p>Convex optimization, ADMM, ISTA/FISTA, nonlinear programming, stochastic processes.</p>
+        <h3>Optimization & Applied Mathematics</h3>
+        <p>
+          Convex optimization (ADMM, ISTA, FISTA), nonlinear programming (SQP basics),
+          stochastic processes, LASSO implementations.
+        </p>
       </div>
 
       <div>
-        <h3>Quant & Finance</h3>
-        <p>Black–Scholes, time-series forecasting, model validation mindset, R & SAS tooling.</p>
+        <h3>Quantitative Finance</h3>
+        <p>
+          Black–Scholes model, option pricing, Greeks,
+          time-series forecasting, risk/model validation mindset,
+          R & SAS statistical tooling.
+        </p>
       </div>
 
       <div>
         <h3>Systems & Performance</h3>
-        <p>C++, CUDA/OpenMP exposure, numerical linear algebra, Linux, Git.</p>
+        <p>
+          C++, CUDA/OpenMP exposure, numerical linear algebra,
+          Linux environment, Git-based workflows.
+        </p>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- EXPERIENCE -->
 <section id="experience" class="section">
@@ -134,26 +172,47 @@
     <h2>Experience</h2>
 
     <div class="timeline">
+
       <div>
         <h3>AI Engineer Intern — Fraud Detection</h3>
-        <p>Built reproducible ML pipeline on real financial transactions. Focus on robustness and interpretability.</p>
+        <p>
+          Built full ML workflow from raw transaction data to deployed inference API.
+          Addressed severe class imbalance, performed feature engineering,
+          compared ensemble models, and structured evaluation pipeline
+          with reproducible experiments and clear metrics reporting.
+        </p>
       </div>
 
       <div>
         <h3>GPU Numerical Linear Algebra Project</h3>
-        <p>Parallel implementation and performance comparison CPU vs GPU.</p>
+        <p>
+          Implemented parallel eigenvalue solver in CUDA (Householder + QL).
+          Explored memory coalescing, performance bottlenecks,
+          and batch processing of small dense matrices.
+        </p>
+      </div>
+      <div>
+        <h3>Mathematics Tutor — Secondary & High School Level</h3>
+        <p class="meta">Dec 2022 – Nov 2024</p>
+        <p>
+          Provided structured mathematics tutoring for middle and high school students.
+          Focused on algebra, calculus foundations, probability and problem-solving methods.
+          Developed tailored explanations and progressive reasoning frameworks to strengthen conceptual understanding and analytical rigor.
+        </p>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- EDUCATION -->
 <section id="education" class="section dark">
   <div class="container">
     <h2>Education</h2>
 
-    <p><strong>ISIMA — Engineering Degree</strong> (AI, Optimization, Data Science)</p>
-    <p><strong>UCA — Applied Mathematics & Statistics</strong></p>
+    <p><strong>ISIMA — MEng. Degree</strong> (AI, Optimization, Data Science)</p>
+    <p><strong>UCA — M.S in Applied Mathematics & Statistics</strong></p>
+    <p><strong>UCA — B.S in Mathematics</strong></p>
     <p><strong>CPGE MPSI/MP</strong> — rigorous mathematics & physics training</p>
   </div>
 </section>
